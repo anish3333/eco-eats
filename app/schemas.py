@@ -8,8 +8,13 @@ class UserBase(BaseModel):
 class UserCreate(UserBase):
     pass
 
+class UserUpdate(UserBase):
+    pass
+
 class UserResponse(UserBase):
     id: int
 
     class Config:
         orm_mode = True
+
+
